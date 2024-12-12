@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.radar-logo {
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.radar-logo img {
+    width: 13rem;
+    max-width: 15rem; 
+    height: auto; 
+    cursor: pointer; 
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    margin-left: auto;
+    padding-top: 3.5rem; 
+    margin-right: 5rem;
+
+}
+
+.nav-icons .search-icon,
+.nav-icons .notification-icon,
+.nav-icons .profile-icon {
+    width: 1.5rem; 
+    height: auto; 
+    cursor: pointer; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header   {
+    border-top: #ffffff;
+    background: transparent;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 1.5rem;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+header .navbar ul li a:hover {
+    color:  #FF1493;
+    border-radius: 60px
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: transparent;
+    display: none;
+    width: 20rem;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:10;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+
+    
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+
+
+    header {
+        padding: 20px;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+
+    }
+
+}
