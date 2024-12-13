@@ -232,3 +232,11 @@ overflow-x: hidden;
     transform: translateY(-20px);
     box-shadow: 0 0 30px 5px rgba(64, 224, 208, 1);
 }
+
+.background-brand {
+    position: absolute; 
+    top: 270rem; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1;
+}
