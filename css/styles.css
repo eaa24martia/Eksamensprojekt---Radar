@@ -240,3 +240,73 @@ overflow-x: hidden;
     background-position: center; 
     z-index: 1;
 }
+
+.infografik2-container {
+    position: absolute; 
+    display: flex;
+    align-items:flex-end;
+    left: 10%;
+    top: 310rem; 
+    box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
+    border-radius: 15px; 
+    overflow: hidden; 
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.infografik2-container img {
+    width: 30rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.infografik2-container:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 30px 5px rgba(255, 20, 147, 1);
+}
+
+.text-side-container3 {
+    position: absolute; 
+    top: 322rem; 
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1; 
+}
+
+.text-side-container4 {
+    position: absolute; 
+    top: 400rem; 
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1; 
+}
+
+.kommende-events2 {
+    margin-top: 2rem;
+    padding: 20px;
+    max-width: 16rem;
+    max-height: 10rem;
+    background-color: #FF5900; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out;
+  }
+
+.kommende-events2:hover {
+  box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
