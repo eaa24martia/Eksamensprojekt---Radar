@@ -88,11 +88,13 @@ overflow-x: hidden;
     border: none;
     box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
     transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out
   }
 
 .kommende-events:hover {
   box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
   cursor: pointer;
+  transform: translateY(-10px);
 }
 
 .background-gray {
@@ -173,3 +175,60 @@ overflow-x: hidden;
     top: 168rem; 
     z-index: 2;
   }
+
+  .text-side-container2 {
+    position: absolute; 
+    top: 233rem; 
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1;
+  }
+
+  .stoette {
+    margin-top: 2rem;
+    padding: 20px;
+    max-width: 16rem;
+    max-height: 10rem;
+    background-color: #40E0D0; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out;
+  }
+
+.stoette:hover {
+  box-shadow: 0 0 30px 10px rgba(255, 20, 147, 1);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.infografik1-container {
+    position: absolute; 
+    display: flex;
+    align-items:flex-end;
+    right: 10%;
+    top: 220rem; 
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    border-radius: 15px; 
+    overflow: hidden; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.infografik1-container img {
+    width: 30rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.infografik1-container:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 30px 5px rgba(64, 224, 208, 1);
+}
