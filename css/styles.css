@@ -310,3 +310,27 @@ overflow-x: hidden;
   cursor: pointer;
   transform: translateY(-10px);
 }
+
+.forum-retro {
+    position: absolute; 
+    display: flex;
+    align-items:flex-end;
+    right: 10%;
+    top: 395rem; 
+    box-shadow: 0 0 20px 5px #FF5900;
+    border-radius: 30px; 
+    overflow: hidden; 
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.forum-retro img {
+    width: 40rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.forum-retro:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 30px 5px #FF5900;
+}
