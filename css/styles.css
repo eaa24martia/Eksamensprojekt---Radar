@@ -8,6 +8,7 @@
 background-color: #1B2A49;
 font-family: "Fredoka", sans-serif;
 color: white;
+overflow-x: hidden;
   }
 
   .container-video {
@@ -51,7 +52,124 @@ color: white;
     background-position: center; 
     overflow: hidden; 
     margin-top: -60rem;
-    z-index: -1
+    z-index: -1;
   }
 
- 
+  .text-side-container {
+    position: absolute; 
+    top: 70rem; 
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1;
+  }
+
+  .bigger {
+    font-size: 40px
+  }
+
+  .bolder  {
+    font-weight: bold;
+  }
+
+  .kommende-events {
+    margin-top: 2rem;
+    padding: 20px;
+    max-width: 16rem;
+    max-height: 10rem;
+    background-color: #FF1493; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    transition: box-shadow 0.3s ease; 
+  }
+
+.kommende-events:hover {
+  box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
+  cursor: pointer;
+}
+
+.background-gray {
+    position: absolute; 
+    top: 90rem; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1;
+}
+
+.seneste-nyt-container {
+    position: absolute; 
+    max-width: 550px;
+    max-height: 400px;
+    z-index: 1;
+    top: 125rem; 
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.h2-seneste-nyt {
+    font-size: 40px;
+    color: #FF5900;
+}
+
+.slider-container {
+    position: absolute; 
+    display: flex;
+    max-width: 90rem;
+    box-shadow: 0 0 30px 10px #FF5900;
+    top: 135rem; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.slider {
+    width: 30rem;
+    height: 30rem;
+    background-color: red;
+    transition: all .9s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.slider:hover {
+    width: 60%;
+}
+
+.slider:hover img {
+    transform: scale(1.1);
+}
+
+.line {
+    position: absolute;
+    border: none;
+    border-top: 4px solid #ff5900;
+    width: 120rem;
+    top: 131rem; 
+    z-index: 2;
+  }
+
+  .line2 {
+    position: absolute;
+    border: none;
+    border-top: 4px solid #ff5900;
+    width: 120rem;
+    top: 168rem; 
+    z-index: 2;
+  }
