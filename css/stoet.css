@@ -66,6 +66,7 @@ body {
 }
 
 .blue-box {
+    position: absolute;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -132,3 +133,55 @@ body {
     background-color: #ff3fa6;
     box-shadow: 0 0 15px 5px rgba(255, 20, 147, 1);
 }
+
+.seneste {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin-top: 20px; /* Adjust margin as necessary */
+}
+
+
+.seneste-text {
+    font-size: 40px;
+    color: #1B2A49;
+}
+
+.profile-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    margin-top: 500rem;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.profile-icon img {
+    width: 40px; /* Adjust size for the circle */
+    height: 40px;
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #2e3d55; /* Placeholder color if no image */
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-left: 12px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
