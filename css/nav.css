@@ -50,19 +50,11 @@
     cursor: pointer; 
 }
 
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header   {
-    border-top: #ffffff;
-    background: transparent;
-    border-top: 1px solid rgb(255, 255, 255);
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding-top: 1.5rem;
 }
 
 header .logo {
@@ -90,6 +82,7 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     color:  #FF1493;
+    text-shadow: 1px 1px 10px rgba(255, 20, 147, 1);
     border-radius: 60px
 }
 
