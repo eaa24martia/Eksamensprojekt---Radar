@@ -11,18 +11,17 @@
     font-family: "Fredoka", sans-serif;
     color: white;
     overflow-x: hidden;
-      }
+}
 
-  .top-baggrund-container {
-    width: 100%;
-    height: auto;
-    margin-top: -30rem;
-    background-color: rgba (0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1
-  }
+.hero {
+    background-image: url(../img/aurora-top.png); /* Remove parentheses */
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position:top;
+    background-size: cover;
+    background-color: #1B2A49;
+}
+
 
   .first-container-text {
     display: flex;
@@ -30,7 +29,7 @@
     flex-direction: column;
     gap: 2rem;
     z-index: 1;
-    margin-top: -90rem;
+    margin-top: 15rem;
     
   }
 
@@ -61,3 +60,56 @@
   cursor: pointer;
   transform: translateY(-10px);
 }
+
+
+
+.popular-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 40rem;
+
+}
+.popular {
+    font-size: 50px;
+    color: white;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 10px 20px;
+  }
+  
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .event img {
+    width: 100%;         
+    height: 25rem;       
+    object-fit: cover;    
+    display: block;       
+    border-radius: 10px;
+  }
+  
+  .event p {
+    margin: 10px 0;
+    font-weight: 100px;
+    text-align: center;
+    color: white;
+  }
+
+.event:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
