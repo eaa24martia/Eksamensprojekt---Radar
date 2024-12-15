@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ 
+
+  body {
+    background-color: #1B2A49;
+    font-family: "Fredoka", sans-serif;
+    color: white;
+    overflow-x: hidden;
+      }
+
+  .top-baggrund-container {
+    width: 100%;
+    height: auto;
+    margin-top: -30rem;
+    background-color: rgba (0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1
+  }
+
+  .first-container-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    margin-top: -90rem;
+    
+  }
+
+  .nyeste-events {
+    font-size: 70px;
+    color: white;
+  }
+
+.billetter {
+    margin-top: 2rem;
+    padding: 20px;
+    width: 15rem;
+    max-width: 20rem;
+    max-height: 15rem;
+    background-color: #40E0D0; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.billetter:hover {
+  box-shadow: 0 0 30px 10px rgba(255, 20, 147, 1);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
