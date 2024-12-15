@@ -359,8 +359,8 @@ overflow-x: hidden;
 }
 
 .bjerge-image {
-    left: 0;              /* Fix it to the left side of the container */
-    top: 0;               /* Initially aligned at the top of the container */
-    width: 100%;          /* Make it stretch to fill horizontally */
-    height: auto;         /* Keep the aspect ratio of the image */
+    left: 0;           
+    top: 0;               
+    width: 100%;          
+    height: auto;        
 }
