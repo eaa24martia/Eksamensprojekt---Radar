@@ -113,3 +113,280 @@
     transform: scale(1.05);
     cursor: pointer;
   }
+
+  .concert-container {
+    margin: 0 auto;
+    text-align: cen;
+}
+
+
+.concerts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem; /* Space between items */
+    flex-wrap: wrap; /* Make it responsive */
+}
+
+.koncerter {
+    padding: 1%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.concert-item {
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.concert-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.concert-item img {
+    width: 100%; /* Scales image to fit its container */
+    height: 150px;
+    max-width: 350px; /* Prevents it from getting too large */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.concert-item p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.koncerter-line {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%; /* Full width */
+    height: 3px; /* Line thickness */
+    background-color: white; /* Line color */
+}
+
+.brand-white-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 100%;
+    min-height: 50vh; 
+    z-index: 0; 
+    margin-top: 15rem;
+}
+
+.brand-white-container img {
+    display: block; 
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+
+.eventdetaljer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%; 
+    min-height: 100vh; 
+    position: absolute; 
+    z-index: 1;
+    margin-top: -90rem;
+}
+
+.eventdetaljer {
+   color: #FF5900; 
+   font-size: 40px;
+}
+.text-container-event {
+    position: absolute;  
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1; 
+    color: #000000; 
+}
+
+
+.event-detaljer-button {
+    margin-top: 2rem;
+    padding: 20px;
+    max-width: 16rem;
+    max-height: 10rem;
+    background-color: #FF5900; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out;
+  }
+
+.event-detaljer-button:hover {
+  box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.radar-koncert {
+     position: absolute; 
+    display: flex;
+    align-items:flex-end;
+    right: 10%;
+    overflow: hidden; 
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    border-radius: 10%;
+}
+
+.radar-koncert img {
+    cursor: pointer;
+    object-fit: cover;
+    max-width: 100%; /* Ensures the image does not overflow horizontally */
+    max-height: 100%; /* Ensures the image does not overflow vertically */
+    width: 400px;
+    height: 500px;
+}
+
+.radar-koncert:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
+
+}
+ 
+.ydelser-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%; 
+    min-height: 100vh; 
+    z-index: 1;
+}
+
+.vores-ydelser {
+   color: #ffffff; 
+   font-size: 40px;
+}
+.text-container-ydelser {
+    position: absolute;  
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1; 
+    color: #ffffff; 
+}
+
+
+.se-alle-ydelser-button {
+    margin-top: 2rem;
+    padding: 20px;
+    max-width: 16rem;
+    max-height: 10rem;
+    background-color: #FF5900; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out;
+  }
+
+.se-alle-ydelser-button:hover {
+  box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+
+.ydelse-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    position: absolute; 
+    display: flex;
+    align-items:flex-end;
+    right: 10%;
+    margin-top: -10rem;
+
+}
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.5rem; /* Space between cards */
+    width: 500px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+/* Icon Background (colored blobs) */
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Image Styling */
+.card img {
+    width: 100px;
+    height: auto;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+.card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.bjerge-container {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0; 
+    overflow: hidden;
+}
+
+.bjerge {
+    display: block; 
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
