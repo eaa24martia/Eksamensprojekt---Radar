@@ -494,3 +494,26 @@ body {
     object-fit: cover; 
 }
 
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+}
+   
+  /* responsiv design med media queries */
+
+/* Desktop (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+
+}
+
+
+/* Tablet (min-width: 481px and max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Telefon (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    
+}

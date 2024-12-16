@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    pointer-events: auto;
   }
   
 
@@ -14,6 +15,8 @@
     padding: 20px;
     margin-bottom: 1rem;
     padding-top: 2rem;
+    
+
 }
 
 .radar-logo {
@@ -23,6 +26,9 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: auto; /* Ensures the pointer events are enabled */
 }
 
 .radar-logo img {
@@ -39,6 +45,7 @@
     margin-left: auto;
     padding-top: 3.5rem; 
     margin-right: 5rem;
+    cursor: pointer;
 
 }
 

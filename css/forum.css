@@ -31,7 +31,7 @@
     max-width: 900px;
     margin: 2rem auto; /* Center horizontally */
     text-align: center;
-    margin-top: 50rem;
+    margin-top: 60rem;
 }
 
 h2 {
@@ -227,15 +227,156 @@ h2 {
   transform: translateY(-10px);
 }
 
-.blue-background-container {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Arrange elements vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center content horizontally */
+
+/* Container */
+.container {
     width: 100%;
-    min-height: 50vh; /* Adjust height as needed */
-    z-index: 0; /* Ensure aurora is above the background, but below content */
-    position: relative; /* To contain its child elements */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    margin-top: 15rem;
+  }
+  
+  .title {
+    color: white;
+    margin: 20px 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Section Styling */
+  .section {
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  border-radius: 30px;
+  padding: 30px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 50rem;
+  width: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 400px;
+    gap: 20px;
+    z-index: 1; 
+    color: #000000; 
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .section-artist-chat{
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    border-radius: 30px;
+    padding: 30px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 50rem;
+    width: auto;
+    flex-direction: row-reverse;
+    }
+  
+  .section h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+    width: 200px;
+  }
+  
+  .button {
+    margin-top: 2rem;
+    padding: 20px;
+    max-width: 16rem;
+    max-height: 10rem;
+    background-color: #FF5900; 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #FF5900;
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+  
+  .icon-aurora {
+    max-width: 30rem;
+    max-height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+  .icon-aurora img {
+    width: 50rem;
+    height: 50rem;
+  }
+  
+  .fan-chat {
+    background-image: url(../img/aurora-element.png); /* Replace with your actual image path */
+  }
+  
+  .artist-chat {
+    background-image: url(../img/aurora-element.png); /* Replace with your actual image path */
+  }
+  
+  .live {
+    background-image: url(../img/aurora-element.png); /* Replace with your actual image path */
+  }
+
+  .artist-text {
+    font-size: 3rem;
+  }
+
+  .bjerge-container {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0; 
+    overflow: hidden;
+    margin-top: 30%;
 }
 
+.bjerge {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+/* responsiv design med media queries */
+
+/* Desktop (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+
+}
+
+
+/* Tablet (min-width: 481px and max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Telefon (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    
+}

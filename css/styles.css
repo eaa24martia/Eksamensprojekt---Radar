@@ -364,3 +364,21 @@ overflow-x: hidden;
     width: 100%;          
     height: auto;        
 }
+
+/* responsiv design med media queries */
+
+/* Desktop (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+
+}
+
+
+/* Tablet (min-width: 481px and max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Telefon (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    
+}
