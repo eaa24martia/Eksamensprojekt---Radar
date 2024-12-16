@@ -14,10 +14,228 @@
 }
 
 .hero {
-    background-image: url(../img/aurora-top.png); /* Remove parentheses */
+    background-image: url(../img/forum-sky-aurora.png); /* Remove parentheses */
     background-repeat: no-repeat;
     background-attachment:local;
     background-position:top;
     background-size: cover;
     background-color: #1B2A49;
 }
+
+
+/* Container styling */
+.community-container {
+    color: #FFFFFF; /* White text */
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 2rem auto; /* Center horizontally */
+    text-align: center;
+    margin-top: 50rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout for Cards */
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+    justify-items: center; 
+}
+
+
+.community-card p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Black text */
+}
+
+/* Main Image */
+.community-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Crop to fill */
+    display: block;
+}
+
+.community-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Individual Cards */
+.community-card {
+    background-color: #FFFFFF; /* White card background */
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Needed for child absolute positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem; /* Extra space for the icon to stick out */
+}
+
+/* Top Section: Title (p) */
+.top-section {
+    background-color: #FFFFFF; /* White background at the top */
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Makes sure title text appears above the image */
+    padding-bottom: 2rem;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute; /* Makes it float */
+    top: 40px; /* Move half of the icon outside the card */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure it’s centered properly */
+    background-color: #1C2C54; /* Circle background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures image is clipped to a circle */
+    z-index: 2; /* Ensure the icon is above the card */
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop to fill the circle */
+}
+
+/* Container styling */
+.community-container2 {
+    color: #FFFFFF; /* White text */
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 2rem auto; /* Center horizontally */
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout for Cards */
+.community-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+    justify-items: center; 
+}
+
+
+.community-card2 p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Black text */
+}
+
+/* Main Image */
+.community-card2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Crop to fill */
+    display: block;
+}
+
+.community-card2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Individual Cards */
+.community-card2 {
+    background-color: #FFFFFF; /* White card background */
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Needed for child absolute positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem; /* Extra space for the icon to stick out */
+}
+
+/* Top Section: Title (p) */
+.top-section2 {
+    background-color: #FFFFFF; /* White background at the top */
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Makes sure title text appears above the image */
+    padding-bottom: 2rem;
+}
+
+.icon2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute; /* Makes it float */
+    top: 40px; /* Move half of the icon outside the card */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure it’s centered properly */
+    background-color: #1C2C54; /* Circle background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures image is clipped to a circle */
+    z-index: 2; /* Ensure the icon is above the card */
+}
+
+.icon2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop to fill the circle */
+}
+
+.flere {
+    width: 15rem;
+    margin-top: 3rem;
+    padding: 20px;
+    max-width: 20rem;
+    max-height: 10rem;
+    background-color: rgba(64, 224, 208, 1); 
+    color: white; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
+    transition: box-shadow 0.3s ease;  
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.flere:hover {
+  box-shadow: 0 0 30px 10px rgba(255, 20, 147, 1);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.blue-background-container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    min-height: 50vh; /* Adjust height as needed */
+    z-index: 0; /* Ensure aurora is above the background, but below content */
+    position: relative; /* To contain its child elements */
+}
+
