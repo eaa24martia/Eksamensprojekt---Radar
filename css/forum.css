@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ 
+
+  body {
+    background-color: #1B2A49;
+    font-family: "Fredoka", sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.hero {
+    background-image: url(../img/aurora-top.png); /* Remove parentheses */
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position:top;
+    background-size: cover;
+    background-color: #1B2A49;
+}
