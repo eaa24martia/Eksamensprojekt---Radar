@@ -31,29 +31,28 @@
             </section>
         </nav>
 
-        <a href="" class="logo"></a>
         <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">
-            <img src="./img/burger-menu.png" alt="">
+        <label class="menu-bar" for="menu-bar">
+            <img src="../img/burger-menu.png" alt="burger-menu-icon">
         </label>
 
         <nav class="navbar">
             <ul>
-                <li><a href="#">Events & Nyheder</a></li>
-                <li><a href="#">Støt os</a></li>
+                <li><a href="./html/events.html" target="_blank">Events & Nyheder</a></li>
+                <li><a href="./html/stoet.html" target="_blank">Støt os</a></li>
                 <li>
-                    <a href="#">Forum</a>
+                    <a href="./html/forum.html" target="_blank">Forum</a>
                     <li>
-                        <a href="#">Indhold</a>
+                        <a href="https://radarlive.dk/kalender/arkiv/" target="_blank">Indhold</a>
                         <ul>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="https://radarlive.dk/blog/" target="_blank">Blog</a></li>
                             <li><a href="#">Playlister</a></li>
-                            <li><a href="#">Podcasts</a></li>
-                            <li><a href="#">Arkiv</a></li>
+                            <li><a href="https://radarlive.dk/podcast/" target="_blank">Podcasts</a></li>
+                            <li><a href="https://radarlive.dk/kalender/arkiv/" target="_blank">Arkiv</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Om os</a>
+                        <a href="https://radarlive.dk/informationer/" target="_blank">Om os</a>
                         <ul>
                             <li><a href="#">Hvad er Radar?</a></li>
                             <li><a href="#">Sociale medier</a></li>
@@ -74,7 +73,11 @@
             </ul>
         </nav>
 
-        <section class="container-video">
+        
+
+    <main>
+
+        <section class="container-tekst">
             <section class="content-h1">
                 <h1>Fang signalerne fra en ny æra -</h1>
                 <h2>Velkommen til vores univers</h2>
@@ -82,7 +85,6 @@
         </section>
     </header>
 
-    <main>
         <video autoplay loop muted plays-inline class="background-video">
             <source src="./video/background-video.mp4" type="video/mp4">
         </video>
@@ -95,7 +97,9 @@
             <h2 class="bigger">Hold dig opdateret på Radars kommende events</h2>
             <p>Gå ikke glip af spændende koncerter og events! Radar er stedet, hvor musikken lever, og vi sørger for, at du altid er opdateret på det nyeste!</p>
             <p class="bolder">Tilmeld dig nu og vær blandt de første, der får besked om kommende events</p>
-            <button class="kommende-events">SE KOMMENDE EVENTS</button>
+            <a href="./html/events.html" target="_blank" class="kommende-events-link">
+                <button class="kommende-events">SE KOMMENDE EVENTS</button>
+              </a>
         </article>
 
         <aside class="background-gray">
@@ -127,7 +131,9 @@
         <article class="text-side-container2">
             <h2 class="bigger">Støt os</h2>
             <p>Radar er mere end et spillested - Det er et fællesskab for musikelskere og upcoming talenter. Din støtte hjælper os med at skabe unikke koncertoplevelser og give plads til morgendagens stjerner.</p>
-            <button class="stoette">LÆS MERE OM STØTTE</button>
+            <a href="./html/stoet.html" target="_blank">
+                <button class="stoette">LÆS MERE OM STØTTE</button>
+              </a>
         </article>
 
         <aside class="infografik1-container">
@@ -145,13 +151,17 @@
         <article class="text-side-container3">
             <h2 class="bigger">Events</h2>
             <p>Fra upcoming artister til etablerede navne. Radar byder på unikke koncertoplevelser, der samler musikelskere i hjertet af Aarhus.</p>
-            <button class="kommende-events">SE KOMMENDE EVENTS</button>
+            <a href="./html/events.html" target="_blank">
+                <button class="kommende-events">SE KOMMENDE EVENTS</button>
+              </a>
         </article>
 
         <article class="text-side-container4">
             <h2 class="bigger">Forum</h2>
             <p>Bliv en del af vores forum og vær med til at dele passionen for musik. Diskutér koncerter, opdag nye artister, og forbind med andre musikelskere!</p>
-            <button class="kommende-events2">SE KOMMENDE EVENTS</button>
+            <a href="./html/forum.html" target="_blank">
+                <button class="kommende-events2">SE FORUM</button>
+              </a>
         </article>
 
         <aside class="forum-retro">
@@ -166,7 +176,9 @@
     <footer>
         <section class="footer">
             <section class="footer-img">
-                <img class="radar-logoet" src="./img/radar-logo-sticker.png" alt="The burger concepts logo">
+                <a href="index.html" target="_blank">
+                    <img class="radar-logoet" src="./img/radar-logo-sticker.png" alt="radar-logo">
+                </a>
                 <section class="icon-group">
                     <a href="https://www.facebook.com/radarlive"><img class="icons" src="./img/facebook.png" alt="facebook"></a>
                     <a href="https://www.youtube.com/user/radarliverec"><img class="icons" src="./img/youtube.png" alt="youtube"></a>
