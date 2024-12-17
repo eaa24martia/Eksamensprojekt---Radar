@@ -250,67 +250,72 @@ body {
 }
  
 
+/* Main member container */
 .medlem-container {
     padding-top: 20%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Stack items vertically */
     justify-content: center;
-    align-items: center;  /* Centers content horizontally */
+    align-items: center;
     width: 100%; 
     min-height: 100vh;  /* Ensures full screen height */
-    position: absolute; 
+    position: relative;  /* Change to relative to prevent the absolute positioning from affecting layout */
     z-index: 1;
     margin-top: -40rem;
+    
 }
 
+/* Text container styling */
 .text-side-container2 {
-    position: absolute;  
-    left: 10%;
     display: flex;
-    flex-direction: column;
-    max-width: 550px;
+    flex-direction: column; /* Stack text items vertically */
+    max-width: 500px;
     max-height: 400px;
     gap: 20px;
     z-index: 1;
-    margin-right: 60%;
-  }
-  
+    text-align: center; /* Center text */
+    align-items: center;
+    margin-left: 100px;
+}
 
-  .fortsaette {
+/* Button Styling */
+.fortsaette {
     margin-top: 2rem;
-    padding: 20px;
+    padding: 20px 40px;
     max-width: 16rem;
     max-height: 10rem;
-    background-color: #40E0D0; 
+    background-color: #40E0D0;
     color: white; 
     border-radius: 30px; 
     cursor: pointer; 
     font-size: 16px; 
     border: none;
     box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
-    transition: box-shadow 0.3s ease; 
+    transition: box-shadow 0.3s ease;
     transition: transform 0.5s ease-in-out;
-  }
-
-.fortsaette:hover {
-  box-shadow: 0 0 30px 10px rgba(255, 20, 147, 1);
-  cursor: pointer;
-  transform: translateY(-10px);
 }
 
+.fortsaette:hover {
+    box-shadow: 0 0 30px 10px rgba(255, 20, 147, 1);
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+/* Image container styling */
 .medlem-ko {
-    position: absolute; 
     display: flex;
-    align-items:flex-end;
-    right: 10%;
-    overflow: hidden; 
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+    width: 100%; /* Ensures the image takes full width of the container */
     transition: transform 0.5s ease-in-out;
     z-index: 1;
 }
 
+/* Image Styling */
 .medlem-ko img {
-    width: 40rem;
+    width: 100%; /* Makes image responsive */
     height: auto;
+    max-width: 40rem; /* Set a max-width to control image size */
     cursor: pointer;
 }
 
@@ -511,9 +516,263 @@ footer {
 /* Tablet (min-width: 481px and max-width: 768px) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
+    .aurora {
+        overflow: hidden;    }
+
+    .aurora img {
+        background-size: 100% ; /* Stretch image for very small screens */
+        width: 200%; /* Further increase image size for very small screens */
+        height: auto;    }
+
+        .profile-icon img {
+            position: absolute;
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+            background-color: #2e3d55;
+            margin-right: rem;
+            top: 15%;
+            left: -20px;
+        }
+
+        .medlem-container {
+            padding-top: 20%;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+            min-height: 100vh;  /* Ensures full screen height */
+            position: relative;  /* Change to relative to prevent the absolute positioning from affecting layout */
+            z-index: 1;
+            margin-top: -40rem;
+            gap: 50px;
+            
+        }
+
+        .text-side-container2 {
+            margin-left: 0;
+
+        }
+
+        .background-brand {
+            position: relative;
+            display: flex;
+            flex-direction: column; /* Arrange elements vertically */
+            justify-content: flex-start; /* Align content at the top */
+            align-items: center; /* Center content horizontally */
+            width: 100%;
+            min-height: 50vh; /* Adjust height as needed */
+            z-index: 0; /* Ensure aurora is above the background, but below content */
+            position: relative; /* To contain its child elements */
+            margin-top: 5rem;
+            overflow: hidden;
+        }
+        
+        .brand-image {
+            background-size: 100% ; /* Stretch image for very small screens */
+        width: 250%; /* Further increase image size for very small screens */
+        height: auto;     
+        }
+
+        .frivillig-container1 {
+            flex-direction: column-reverse; /* Stack elements vertically on smaller screens */
+            justify-content: center; /* Align items to the top */
+            align-items: center; /* Center items horizontally */
+        }
+    
+        .text-side-container3 {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+            min-height: 100vh;  /* Ensures full screen height */
+            z-index: 1;
+            gap: 15px;
+            margin-top: -60rem;
+        }
+    
+        .frivillig-container {
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Align image vertically in column */
+            margin-top: 10rem;
+        }
+    
+        .partner-container {
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align items at the top */
+            align-items: center; /* Center items horizontally */
+            gap: 20px; /* Reduce gap between items */
+        }
+    
+    
+            .text-side-container4 {
+                display: flex;
+                flex-direction: column; /* Stack items vertically */
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%; 
+                z-index: 1;
+                margin-left: 2rem;
+                gap: 15px
+                
+            }
+        
+    
+        .partner-container img {
+            width: 100%; /* Make the image responsive */
+            max-width: 40rem; /* Limit maximum width for better scaling */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 2;
+            margin-top: 25rem;
+        }
+
 }
 
+
+
 /* Telefon (max-width: 480px) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
+    .aurora {
+        overflow: hidden;    }
+
+    .aurora img {
+        background-size: 100% ; /* Stretch image for very small screens */
+        width: 250%; /* Further increase image size for very small screens */
+        height: auto;    }
+
+        .profile-icon img {
+            position: absolute;
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+            background-color: #2e3d55;
+            margin-right: rem;
+            top: 15%;
+            left: -20px;
+        }
+
+        .medlem-container {
+            padding-top: 20%;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+            min-height: 100vh;  /* Ensures full screen height */
+            position: relative;  /* Change to relative to prevent the absolute positioning from affecting layout */
+            z-index: 1;
+            margin-top: -20rem;
+            gap: 50px;
+            
+        }
+
+        .text-side-container2 {
+            margin-left: 0;
+
+        }
+
+        .background-brand {
+            position: relative;
+            display: flex;
+            flex-direction: column; /* Arrange elements vertically */
+            justify-content: flex-start; /* Align content at the top */
+            align-items: center; /* Center content horizontally */
+            width: 100%;
+            min-height: 50vh; /* Adjust height as needed */
+            z-index: 0; /* Ensure aurora is above the background, but below content */
+            position: relative; /* To contain its child elements */
+            margin-top: 5rem;
+            overflow: hidden;
+        }
+        
+        .brand-image {
+            background-size: 100% ; /* Stretch image for very small screens */
+        width: 250%; /* Further increase image size for very small screens */
+        height: auto;     
+        }
+
+        .frivillig-container1 {
+            flex-direction: column-reverse; /* Stack elements vertically on smaller screens */
+            justify-content: center; /* Align items to the top */
+            align-items: center; /* Center items horizontally */
+        }
     
+      
+            .text-side-container3 {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                width: 100%;
+                min-height: 100vh;
+                z-index: 1;
+                gap: 15px;
+                margin-top: -1rem;
+                margin-right: -2.9rem;
+                text-align: center;
+            }
+    
+        
+        .frivillig-container img {
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Align image vertically in column */
+            margin-top: 40rem;
+            width: 90%;
+        }
+
+        .frivillig-container {
+            width: 80%;
+            height: auto;
+            max-width: 40rem;
+            cursor: pointer;
+        }
+    
+        .partner-container {
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center; /* Align items at the top */
+            align-items: center; /* Center items horizontally */
+            gap: 20px; /* Reduce gap between items */
+            margin-top: -10rem;
+        }
+    
+    
+            .text-side-container4 {
+                display: flex;
+                flex-direction: column; /* Stack items vertically */
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 90%; 
+                z-index: 1;
+                position:unset;
+                left: 0%;
+                display: flex;
+                flex-direction: column;
+                max-width: 550px;
+                max-height: 400px;
+                gap: 20px;
+                z-index: 1;
+                margin-left: -0.5rem;
+                margin-bottom: 10rem;
+                
+            }
+            
+    
+        .partner-container img {
+            width:100%; /* Make the image responsive */
+            max-width: 40rem; /* Limit maximum width for better scaling */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 2;
+            margin-top: 50rem;
+
+        }
+
+        .medlem-ko img {
+            width: 70%;
+        }
 }
