@@ -1,4 +1,4 @@
-* {
+* { /*reset af stylesheet*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
 }
 
 
- /* Background Styling */
+ /* Baggrund af stjerner*/
 .background-star {
     background-size: cover; 
     background-position: center; 
@@ -26,31 +26,31 @@ body {
 }
 
 
-/* Content Wrapper (Ensures flex layout) */
+
 .content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;  /* Centers content horizontally */
+    align-items: center;  
     width: 100%; 
-    min-height: 100vh;  /* Ensures full screen height */
+    min-height: 100vh; 
     margin: 0;
     padding: 0;
-    position: relative; /* Make sure the content sits above the background */
+    position: relative; 
     z-index: 1;
 }
 
-/* Heading Styling */
+/* Header Styling */
 .content-h1 {
     display: flex;
     justify-content: center; 
     text-align: center;
     flex-direction: column;
     gap: 20px;
-    z-index: 1; /* Ensure it is above the background */
+    z-index: 1;
 }
 
-/* Heading Sizes and Styling */
+
 .content-h1 h1 {
     font-size: 70px;
     color: white;
@@ -63,16 +63,17 @@ body {
 }
 
 
+ /*Baggrundsbillde af moenster*/
 .aurora {
     position: relative;
     display: flex;
-    flex-direction: column; /* Arrange elements vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
     width: 100%;
-    min-height: 50vh; /* Adjust height as needed */
-    z-index: 0; /* Ensure aurora is above the background, but below content */
-    position: relative; /* To contain its child elements */
+    min-height: 50vh; 
+    z-index: 0; 
+    position: relative; 
     margin-top: -35vh;
 }
 
@@ -86,14 +87,15 @@ body {
 .aurora-content {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centers content horizontally */
+    align-items: center; 
     width: 100%; 
-    min-height: 100vh;  /* Ensures full screen height */
+    min-height: 100vh;  
     position: absolute; 
     z-index: 1;
     margin-top: 20rem;
 }
 
+ /*Her starter donationsboksen*/
 .blue-box-container {
     display: flex;
     justify-content: center;
@@ -116,7 +118,6 @@ body {
     box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
     color: white;  
     z-index: 1;
-
 }
 
 
@@ -126,6 +127,7 @@ body {
     font-weight: bolder;
 }
 
+ /*Knapperne er lavet ved hjaelp af grid*/
 .button-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -168,6 +170,7 @@ body {
     box-shadow: 0 0 15px 5px rgba(255, 20, 147, 1);
 }
 
+ /*Afsnit, hvor man kan se, hvem der har doneret*/
 .seneste {
     display: flex;
     justify-content: center;
@@ -253,31 +256,31 @@ body {
 .medlem-container {
     padding-top: 20%;
     display: flex;
-    flex-direction: row; /* Stack items vertically */
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
     width: 100%; 
-    min-height: 100vh;  /* Ensures full screen height */
-    position: relative;  /* Change to relative to prevent the absolute positioning from affecting layout */
+    min-height: 100vh; 
+    position: relative;  
     z-index: 1;
     margin-top: -40rem;
     
 }
 
-/* Text container styling */
+
 .text-side-container2 {
     display: flex;
-    flex-direction: column; /* Stack text items vertically */
+    flex-direction: column;
     max-width: 500px;
     max-height: 400px;
     gap: 20px;
     z-index: 1;
-    text-align: center; /* Center text */
+    text-align: center; 
     align-items: center;
     margin-left: 100px;
 }
 
-/* Button Styling */
+
 .fortsaette {
     margin-top: 2rem;
     padding: 20px 40px;
@@ -300,21 +303,21 @@ body {
     transform: translateY(-10px);
 }
 
-/* Image container styling */
+/* Billede af medlem-ko, der er en slags mascot på siden*/
 .medlem-ko {
     display: flex;
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center the image */
-    width: 100%; /* Ensures the image takes full width of the container */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
     transition: transform 0.5s ease-in-out;
     z-index: 1;
 }
 
-/* Image Styling */
+
 .medlem-ko img {
-    width: 100%; /* Makes image responsive */
+    width: 100%; 
     height: auto;
-    max-width: 40rem; /* Set a max-width to control image size */
+    max-width: 40rem; 
     cursor: pointer;
 }
 
@@ -323,17 +326,17 @@ body {
 }
 
 
-
+ /*Baggrundsbillede af brand moenster*/
 .background-brand {
     position: relative;
     display: flex;
-    flex-direction: column; /* Arrange elements vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
     width: 100%;
-    min-height: 50vh; /* Adjust height as needed */
-    z-index: 0; /* Ensure aurora is above the background, but below content */
-    position: relative; /* To contain its child elements */
+    min-height: 50vh; 
+    z-index: 0; 
+    position: relative; 
     margin-top: 20rem;
 }
 
@@ -344,13 +347,14 @@ body {
     object-fit: cover; 
 }
 
+ /*Frivilligt afsnit*/
 .frivillig-container1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  /* Centers content horizontally */
+    align-items: center;  
     width: 100%; 
-    min-height: 100vh;  /* Ensures full screen height */
+    min-height: 100vh; 
     position: absolute; 
     z-index: 1;
     margin-top: -80rem;
@@ -411,7 +415,7 @@ body {
   transform: translateY(-10px);
 }
 
-
+ /*Bliv partner afsnit*/
 .partner-container {
     display: flex;
     flex-direction: column;
@@ -421,7 +425,7 @@ body {
     min-height: 100vh; 
     position: absolute; 
     z-index: 1;
-    margin-bottom: 50px; /* Adjust this value to control the gap */
+    margin-bottom: 50px; 
     
 }
 .text-side-container4 {
@@ -434,7 +438,6 @@ body {
     gap: 20px;
     z-index: 1; 
 }
-
 
 .forum-2 {
     margin-top: 2rem;
@@ -481,14 +484,14 @@ body {
 
 }
  
-
+ /*Baggrundsbillede af bjerge*/
 .bjerge-container {
     display: flex;
     width: 100%;
     min-height: 100vh;
     z-index: 0; 
     overflow: hidden;
-    margin-top: 60rem; /* Adjust this value to control the gap */
+    margin-top: 60rem;
 }
 
 .bjerge {
@@ -498,6 +501,7 @@ body {
     object-fit: cover; 
 }
 
+ /*En smule footer*/
 footer {
     text-align: center;
     width: 100%;
@@ -771,5 +775,16 @@ footer {
 
         .medlem-ko img {
             width: 70%;
+        }
+
+        .content-h1 h1 {
+            font-size: 40px;
+            color: white;
+            text-shadow: 1px 1px 20px #FF1493;
+        }
+        
+        .content-h1 h2 {
+            font-size: 40px;
+            color: white;
         }
 }

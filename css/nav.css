@@ -1,4 +1,4 @@
-* {
+* { /*reset af stylesheet*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
     background-color: #333;
   }
 
+   /*Boks over navigationsbaren, der indeholder logo*/
   .top-box {
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,7 @@
 }
 
 
-
+ /*Navigation*/
 .nav-icons .search-icon,
 .nav-icons .notification-icon,
 .nav-icons .profile-icon {
@@ -170,8 +171,8 @@ header label {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* Ensure items stack vertically */
-        gap: 1px; /* Adds space between items */
+        flex-direction: column; 
+        gap: 1px; 
     }
 
     header .navbar ul li ul {
@@ -195,8 +196,8 @@ header label {
     }
 
     #menu-bar:checked ~ .content-video {
-        margin-top: 40rem; /* Adjust the value based on the navbar height */
-        transition: margin-top 0.3s ease; /* Add smooth animation */
+        margin-top: 40rem; 
+        transition: margin-top 0.3s ease; 
     }
 
     .menu-bar {

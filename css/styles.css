@@ -1,17 +1,18 @@
-* {
+* { /*reset af stylesheet*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  body {
+  body { /*styling af body*/
 background-color: #1B2A49;
 font-family: "Fredoka", sans-serif;
 color: white;
 overflow-x: hidden;
   }
 
-  .container-tekst {
+  /*Content oppe i header*/
+  .container-tekst { 
     width: 100%;
     height: 100vh;
     background-color: transparent;
@@ -36,7 +37,7 @@ overflow-x: hidden;
     color: white;
   }
 
-
+  /*Baggrunds video*/
   .background-video {
     position: absolute;
     right: 0;
@@ -45,7 +46,8 @@ overflow-x: hidden;
     height: 100%;
     width: auto;
   }
-  
+   
+  /*Baggrund med stjerner*/
   .background-star {
     background-size: cover; 
     background-position: center; 
@@ -76,6 +78,7 @@ overflow-x: hidden;
     font-weight: bold;
   }
 
+   /*Tekst omkring kommende events*/
   .kommende-events {
     margin-top: 2rem;
     padding: 20px;
@@ -101,6 +104,7 @@ overflow-x: hidden;
   text-align: center;
 }
 
+ /*Gray baggrund element/section*/
 .background-gray {
     position: absolute; 
     top: 90rem; 
@@ -114,6 +118,7 @@ overflow-x: hidden;
     height: auto;
 }
 
+ /*Seneste nyt, hvor der er en slider*/
 .seneste-nyt-container {
     position: absolute; 
     max-width: 550px;
@@ -185,6 +190,7 @@ overflow-x: hidden;
     z-index: 2;
   }
 
+   /*Tekst omkring stoette*/
   .text-side-container2 {
     position: absolute; 
     top: 220rem; 
@@ -222,6 +228,7 @@ overflow-x: hidden;
   text-align: center;
 }
 
+ /*Infografik omkring støtte*/
 .infografik1-container {
     position: absolute; 
     display: flex;
@@ -244,6 +251,7 @@ overflow-x: hidden;
     box-shadow: 0 0 30px 5px rgba(64, 224, 208, 1);
 }
 
+ /*Brand baggrund*/
 .background-brand {
     position: absolute; 
     top: 270rem; 
@@ -258,6 +266,7 @@ overflow-x: hidden;
     height: auto;
 }
 
+ /*Infografik omkring events*/
 .infografik2-container {
     position: absolute; 
     display: flex;
@@ -282,6 +291,7 @@ overflow-x: hidden;
     box-shadow: 0 0 30px 5px rgba(255, 20, 147, 1);
 }
 
+ /*Content omkring, hvad Forum er*/
 .text-side-container3 {
     position: absolute; 
     top: 298rem; 
@@ -355,6 +365,7 @@ overflow-x: hidden;
     box-shadow: 0 0 30px 5px #FF5900;
 }
 
+ /*Baggrunds billede af bjerge, der er i bunden*/
 .bjerge-container {
     display: flex;
     width: 100%;
@@ -572,12 +583,12 @@ overflow-x: hidden;
         border-radius: 15px; 
         overflow: hidden; 
         transition: transform 0.5s ease-in-out;
-        width: 390px;
+        width: 400px;
         margin: 0 -1%;
     }
     
     .infografik1-container img {
-        width: 30rem;
+        width: 25rem;
         height: auto;
         cursor: pointer;
         
@@ -657,6 +668,25 @@ overflow-x: hidden;
         margin-right: 5rem;
       }
 
-
+      .content-h1 h1{
+        font-size: 50px;
+        color: white;
+      }
      
+      .content-h1 h2{
+        font-size: 40px;
+        color: white;
+      }
+
+      .stoette {
+        margin-left: 3rem;
+      }
+
+      .kommende-events {
+        margin-left: 2rem;
+      }
+
+      .kommende-events2 {
+        margin-left: 2.5rem;
+      }
 }

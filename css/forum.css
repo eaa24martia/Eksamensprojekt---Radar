@@ -1,4 +1,4 @@
-* {
+* { /*reset af stylesheet*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,8 +13,9 @@
     overflow-x: hidden;
 }
 
+ /*Hero section*/
 .hero {
-    background-image: url(../img/forum-sky-aurora.png); /* Remove parentheses */
+    background-image: url(../img/forum-sky-aurora.webp); 
     background-repeat: no-repeat;
     background-attachment:local;
     background-position:top;
@@ -23,13 +24,13 @@
 }
 
 
-/* Container styling */
+ /*Header tekst og content*/
 .community-container {
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF; 
     padding: 2rem;
     border-radius: 12px;
     max-width: 900px;
-    margin: 2rem auto; /* Center horizontally */
+    margin: 2rem auto; 
     text-align: center;
     margin-top: 60rem;
 }
@@ -39,7 +40,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Grid Layout for Cards */
+ /*Mine faellesskaber content*/
 .community-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -52,14 +53,14 @@ h2 {
     margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #000; /* Black text */
+    color: #000; 
 }
 
-/* Main Image */
+
 .community-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Crop to fill */
+    object-fit: cover; 
     display: block;
 }
 
@@ -68,26 +69,26 @@ h2 {
     cursor: pointer;
 }
 
-/* Individual Cards */
+
 .community-card {
-    background-color: #FFFFFF; /* White card background */
+    background-color: #FFFFFF; 
     border-radius: 12px;
     text-align: center;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Needed for child absolute positioning */
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem; /* Extra space for the icon to stick out */
+    padding-top: 1rem; 
 }
 
-/* Top Section: Title (p) */
+
 .top-section {
-    background-color: #FFFFFF; /* White background at the top */
+    background-color: #FFFFFF; 
     width: 100%;
     position: relative;
-    z-index: 1; /* Makes sure title text appears above the image */
+    z-index: 1; 
     padding-bottom: 2rem;
 }
 
@@ -95,31 +96,30 @@ h2 {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    position: absolute; /* Makes it float */
-    top: 40px; /* Move half of the icon outside the card */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Ensure it’s centered properly */
-    background-color: #1C2C54; /* Circle background */
+    position: absolute; 
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #1C2C54; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensures image is clipped to a circle */
-    z-index: 2; /* Ensure the icon is above the card */
+    overflow: hidden; 
+    z-index: 2; 
 }
 
 .icon img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop to fill the circle */
 }
 
-/* Container styling */
+/*Andre faellesskaber content */
 .community-container2 {
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF; 
     padding: 2rem;
     border-radius: 12px;
     max-width: 900px;
-    margin: 2rem auto; /* Center horizontally */
+    margin: 2rem auto; 
     text-align: center;
     margin-top: 5rem;
 }
@@ -142,14 +142,14 @@ h2 {
     margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #000; /* Black text */
+    color: #000;
 }
 
-/* Main Image */
+
 .community-card2 img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Crop to fill */
+    object-fit: cover; 
     display: block;
 }
 
@@ -158,26 +158,26 @@ h2 {
     cursor: pointer;
 }
 
-/* Individual Cards */
+
 .community-card2 {
-    background-color: #FFFFFF; /* White card background */
+    background-color: #FFFFFF; 
     border-radius: 12px;
     text-align: center;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Needed for child absolute positioning */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem; /* Extra space for the icon to stick out */
+    padding-top: 1rem; 
 }
 
-/* Top Section: Title (p) */
+
 .top-section2 {
-    background-color: #FFFFFF; /* White background at the top */
+    background-color: #FFFFFF; 
     width: 100%;
     position: relative;
-    z-index: 1; /* Makes sure title text appears above the image */
+    z-index: 1; 
     padding-bottom: 2rem;
 }
 
@@ -185,22 +185,22 @@ h2 {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    position: absolute; /* Makes it float */
-    top: 40px; /* Move half of the icon outside the card */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Ensure it’s centered properly */
-    background-color: #1C2C54; /* Circle background */
+    position: absolute; 
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #1C2C54; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensures image is clipped to a circle */
-    z-index: 2; /* Ensure the icon is above the card */
+    overflow: hidden; 
+    z-index: 2; 
 }
 
 .icon2 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop to fill the circle */
+    object-fit: cover; 
 }
 
 .flere {
@@ -228,7 +228,7 @@ h2 {
 }
 
 
-/* Container */
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -244,10 +244,10 @@ h2 {
     font-size: 2.5rem;
   }
   
-  /* Section Styling */
+
   .section {
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center; /* Centers the image */
+  background-size: cover; 
+  background-position: center;
   border-radius: 30px;
   padding: 30px;
   margin: 20px auto;
@@ -270,9 +270,11 @@ h2 {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+   /*Artist-chat section*/
   .section-artist-chat{
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
+    background-size: cover; 
+    background-position: center; 
     border-radius: 30px;
     padding: 30px;
     margin: 20px auto;
@@ -333,21 +335,22 @@ h2 {
   }
   
   .fan-chat {
-    background-image: url(../img/aurora-element.png); /* Replace with your actual image path */
+    background-image: url(../img/aurora-element.webp); 
   }
   
   .artist-chat {
-    background-image: url(../img/aurora-element.png); /* Replace with your actual image path */
+    background-image: url(../img/aurora-element.webp); 
   }
   
   .live {
-    background-image: url(../img/aurora-element.png); /* Replace with your actual image path */
+    background-image: url(../img/aurora-element.webp); 
   }
 
   .artist-text {
     font-size: 3rem;
   }
 
+   /*Bjerge-container*/
   .bjerge-container {
     width: 100%;
     min-height: 100vh;

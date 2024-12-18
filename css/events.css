@@ -1,4 +1,4 @@
-* {
+* { /*reset af stylesheet*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,9 +12,9 @@
     color: white;
     overflow-x: hidden;
 }
-
+ /*Hero-section*/
 .hero {
-    background-image: url(../img/aurora-top.png); /* Remove parentheses */
+    background-image: url(../img/aurora-top.webp); 
     background-repeat: no-repeat;
     background-attachment:local;
     background-position:top;
@@ -62,7 +62,7 @@
 }
 
 
-
+ /*Populaere events section*/
 .popular-container {
     display: flex;
     align-items: center;
@@ -118,13 +118,13 @@
     margin: 0 auto;
 }
 
-
+  /*Concerter section*/
 .concerts {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem; /* Space between items */
-    flex-wrap: wrap; /* Make it responsive */
+    gap: 5rem; 
+    flex-wrap: wrap; 
 }
 
 .koncerter {
@@ -145,9 +145,9 @@
 }
 
 .concert-item img {
-    width: 100%; /* Scales image to fit its container */
+    width: 100%; 
     height: 150px;
-    max-width: 350px; /* Prevents it from getting too large */
+    max-width: 350px; 
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -163,11 +163,12 @@
 .koncerter-line {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    width: 100%; /* Full width */
-    height: 3px; /* Line thickness */
-    background-color: white; /* Line color */
+    width: 100%; 
+    height: 3px; 
+    background-color: white;
 }
 
+ /*White brand baggrund*/
 .brand-white-container {
     position: relative;
     display: flex;
@@ -180,7 +181,7 @@
     margin-top: 15rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* Default */
+    background-size: cover; 
 }
 
 
@@ -191,7 +192,7 @@
     object-fit: cover; 
 }
 
-
+ /*Detaljer omkring event*/
 .eventdetaljer-container {
     display: flex;
     flex-direction: column;
@@ -258,8 +259,8 @@
 .radar-koncert img {
     cursor: pointer;
     object-fit: cover;
-    max-width: 100%; /* Ensures the image does not overflow horizontally */
-    max-height: 100%; /* Ensures the image does not overflow vertically */
+    max-width: 100%; 
+    max-height: 100%; 
     width: 400px;
     height: 500px;
 }
@@ -270,13 +271,14 @@
 
 }
  
+ /*De forskellige ydelser, som Radar tilbyder*/
 .ydelser-container {
     display: flex;
-    flex-direction: row; /* Stack elements vertically */
-    justify-content: space-between; /* Space between the text and grid */
-    align-items: flex-start; /* Align items to the top */
-    gap: 2rem; /* Add spacing between elements */
-    padding: 1rem; /* Add padding for smaller screens */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 2rem; 
+    padding: 1rem; 
     margin-top: 10rem;
 }
 
@@ -335,14 +337,14 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 1.5rem;
     width: 100%;
-    max-width: 600px; /* Optional max width */
-    margin: 0 auto; /* Center the grid */
+    max-width: 600px; 
+    margin: 0 auto; 
     padding: 0 1rem;
     margin-top: 6rem;
     margin-left: -30%;
 }
 
-/* Card Styling */
+
 .card {
     background-color: #fff;
     border-radius: 12px;
@@ -356,7 +358,6 @@
     text-align: center;
 }
 
-/* Icon Background (colored blobs) */
 .icon {
     width: 70px;
     height: 70px;
@@ -365,7 +366,7 @@
     z-index: -1;
 }
 
-/* Image Styling */
+
 .card img {
     width: 100px;
     height: auto;
@@ -376,13 +377,14 @@
     transform: scale(1.05);
 }
 
-/* Text Styling */
+
 .card p {
     font-size: 1rem;
     font-weight: bold;
     color: #000;
 }
 
+ /*Content oppe i header*/
 .bjerge-container {
     width: 100%;
     min-height: 100vh;
