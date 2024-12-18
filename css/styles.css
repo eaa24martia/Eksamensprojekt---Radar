@@ -14,7 +14,7 @@ overflow-x: hidden;
   .container-tekst {
     width: 100%;
     height: 100vh;
-    background-color: rgba (0,0,0,0.4);
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,13 +89,16 @@ overflow-x: hidden;
     border: none;
     box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
     transition: box-shadow 0.3s ease; 
-    transition: transform 0.5s ease-in-out
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
   }
 
 .kommende-events:hover {
   box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
   cursor: pointer;
   transform: translateY(-10px);
+  color: white;
+  text-align: center;
 }
 
 .background-gray {
@@ -208,12 +211,15 @@ overflow-x: hidden;
     box-shadow: 0 0 20px 5px rgba(255, 20, 147, 1);
     transition: box-shadow 0.3s ease; 
     transition: transform 0.5s ease-in-out;
+    text-align: center;
   }
 
 .stoette:hover {
   box-shadow: 0 0 30px 10px rgba(255, 20, 147, 1);
   cursor: pointer;
   transform: translateY(-10px);
+  color: white;
+  text-align: center;
 }
 
 .infografik1-container {
@@ -231,7 +237,6 @@ overflow-x: hidden;
 .infografik1-container img {
     width: 30rem;
     height: auto;
-    cursor: pointer;
 }
 
 .infografik1-container:hover {
@@ -264,12 +269,12 @@ overflow-x: hidden;
     overflow: hidden; 
     transition: transform 0.5s ease-in-out;
     z-index: 1;
+    margin-top: 17rem;
 }
 
 .infografik2-container img {
     width: 30rem;
     height: auto;
-    cursor: pointer;
 }
 
 .infografik2-container:hover {
@@ -287,6 +292,7 @@ overflow-x: hidden;
     max-height: 400px;
     gap: 20px;
     z-index: 1; 
+    margin-top: 17rem;
 }
 
 .text-side-container4 {
@@ -315,12 +321,15 @@ overflow-x: hidden;
     box-shadow: 0 0 20px 5px rgba(64, 224, 208, 1);
     transition: box-shadow 0.3s ease; 
     transition: transform 0.5s ease-in-out;
+    text-align: center;
   }
 
 .kommende-events2:hover {
   box-shadow: 0 0 30px 10px rgba(64, 224, 208, 1);
   cursor: pointer;
   transform: translateY(-10px);
+  color: white;
+  text-align: center;
 }
 
 .forum-retro {
@@ -339,7 +348,6 @@ overflow-x: hidden;
 .forum-retro img {
     width: 40rem;
     height: auto;
-    cursor: pointer;
 }
 
 .forum-retro:hover {
@@ -388,8 +396,8 @@ overflow-x: hidden;
       }
 
       .background-gray img {
-        background-size: 100% ; /* Stretch image for very small screens */
-        width: 240%; /* Further increase image size for very small screens */
+        background-size: 100% ; 
+        width: 240%; 
         height: auto; 
         overflow: hidden;
       }
@@ -435,8 +443,8 @@ overflow-x: hidden;
     }
 
     .background-brand img{
-        background-size: 100% ; /* Stretch image for very small screens */
-        width: 220%; /* Further increase image size for very small screens */
+        background-size: 100% ; 
+        width: 220%; 
         height: auto; 
       }
 
@@ -525,8 +533,8 @@ overflow-x: hidden;
       }
 
       .background-gray img {
-        background-size: 100% ; /* Stretch image for very small screens */
-        width: 240%; /* Further increase image size for very small screens */
+        background-size: 100% ; 
+        width: 240%; 
         height: auto; 
         overflow: hidden;
         margin-top: 20rem;
@@ -576,8 +584,8 @@ overflow-x: hidden;
     }
 
     .background-brand img{
-        background-size: 100% ; /* Stretch image for very small screens */
-        width: 300%; /* Further increase image size for very small screens */
+        background-size: 100%;
+        width: 300%; 
         height: auto; 
       }
 

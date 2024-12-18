@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    pointer-events: auto;
   }
   
 
@@ -32,7 +31,6 @@
     align-items: center; 
     cursor: pointer;
     z-index: 10;
-    pointer-events: auto; 
 }
 
 
@@ -125,7 +123,6 @@ header .navbar ul li ul li {
 
 header .navbar ul li ul li ul {
     left: 200px;
-    top:10;
 }
 
 header .navbar ul li:focus-within > ul,
